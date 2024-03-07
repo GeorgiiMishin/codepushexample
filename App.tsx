@@ -6,23 +6,16 @@
  */
 
 import React, {useEffect} from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
   StatusBar,
-  StyleSheet,
   Text,
   useColorScheme,
-  View,
   NativeModules,
   Platform,
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
 
 const {CodePushModule} = NativeModules;
 
