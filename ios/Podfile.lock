@@ -1113,6 +1113,7 @@ PODS:
     - React-perflogger (= 0.73.4)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
+  - ZIPFoundation (0.9.16)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
@@ -1188,6 +1189,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+  - ZIPFoundation (~> 0.9)
 
 SPEC REPOS:
   trunk:
@@ -1204,6 +1206,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - ZIPFoundation
 
 EXTERNAL SOURCES:
   boost:
@@ -1366,7 +1369,8 @@ SPEC CHECKSUMS:
   ReactCommon: 840a955d37b7f3358554d819446bffcf624b2522
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 64cd2a583ead952b0315d5135bf39e053ae9be70
+  ZIPFoundation: d170fa8e270b2a32bef9dcdcabff5b8f1a5deced
 
-PODFILE CHECKSUM: 4de016d767d49cbb5be06f616b6f57fa77949209
+PODFILE CHECKSUM: dbd8b532f51d24b8671c864d97e951c4943e1baf
 
 COCOAPODS: 1.14.3

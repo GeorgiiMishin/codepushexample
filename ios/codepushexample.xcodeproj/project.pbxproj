@@ -14,6 +14,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-codepushexample-codepushexampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-codepushexample-codepushexampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		E4AEF9142B824AE6009D2EDC /* bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF9132B824AE6009D2EDC /* bridge.swift */; };
+		E4AEF9162B824AF6009D2EDC /* CodePushModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF9152B824AF6009D2EDC /* CodePushModule.swift */; };
+		E4AEF9182B824B45009D2EDC /* CodePushModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF9172B824B45009D2EDC /* CodePushModule.m */; };
+		E4AEF91A2B824F5A009D2EDC /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF9192B824F5A009D2EDC /* DiskManager.swift */; };
+		E4AEF91C2B824F72009D2EDC /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF91B2B824F72009D2EDC /* DownloadManager.swift */; };
+		E4AEF91E2B824F82009D2EDC /* CodePushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF91D2B824F82009D2EDC /* CodePushManager.swift */; };
+		E4AEF9202B8251BA009D2EDC /* InfoKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AEF91F2B8251BA009D2EDC /* InfoKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,14 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-codepushexample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-codepushexample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = codepushexample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-codepushexample-codepushexampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codepushexample-codepushexampleTests.release.xcconfig"; path = "Target Support Files/Pods-codepushexample-codepushexampleTests/Pods-codepushexample-codepushexampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4AEF9122B824AE5009D2EDC /* codepushexample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "codepushexample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4AEF9132B824AE6009D2EDC /* bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridge.swift; sourceTree = "<group>"; };
+		E4AEF9152B824AF6009D2EDC /* CodePushModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushModule.swift; sourceTree = "<group>"; };
+		E4AEF9172B824B45009D2EDC /* CodePushModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodePushModule.m; sourceTree = "<group>"; };
+		E4AEF9192B824F5A009D2EDC /* DiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskManager.swift; sourceTree = "<group>"; };
+		E4AEF91B2B824F72009D2EDC /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		E4AEF91D2B824F82009D2EDC /* CodePushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushManager.swift; sourceTree = "<group>"; };
+		E4AEF91F2B8251BA009D2EDC /* InfoKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoKeys.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,12 +101,15 @@
 		13B07FAE1A68108700A75B9A /* codepushexample */ = {
 			isa = PBXGroup;
 			children = (
+				E4AEF9112B824AC4009D2EDC /* CodePush */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				E4AEF9132B824AE6009D2EDC /* bridge.swift */,
+				E4AEF9122B824AE5009D2EDC /* codepushexample-Bridging-Header.h */,
 			);
 			name = codepushexample;
 			sourceTree = "<group>";
@@ -146,6 +164,19 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-codepushexample-codepushexampleTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4AEF9112B824AC4009D2EDC /* CodePush */ = {
+			isa = PBXGroup;
+			children = (
+				E4AEF9152B824AF6009D2EDC /* CodePushModule.swift */,
+				E4AEF9172B824B45009D2EDC /* CodePushModule.m */,
+				E4AEF9192B824F5A009D2EDC /* DiskManager.swift */,
+				E4AEF91B2B824F72009D2EDC /* DownloadManager.swift */,
+				E4AEF91D2B824F82009D2EDC /* CodePushManager.swift */,
+				E4AEF91F2B8251BA009D2EDC /* InfoKeys.swift */,
+			);
+			path = CodePush;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +237,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -392,8 +423,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4AEF9162B824AF6009D2EDC /* CodePushModule.swift in Sources */,
+				E4AEF9142B824AE6009D2EDC /* bridge.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				E4AEF91A2B824F5A009D2EDC /* DiskManager.swift in Sources */,
+				E4AEF9182B824B45009D2EDC /* CodePushModule.m in Sources */,
+				E4AEF9202B8251BA009D2EDC /* InfoKeys.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				E4AEF91E2B824F82009D2EDC /* CodePushManager.swift in Sources */,
+				E4AEF91C2B824F72009D2EDC /* DownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-codepushexample-codepushexampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -439,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-codepushexample-codepushexampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = codepushexampleTests/Info.plist;
@@ -465,7 +505,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = codepushexample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,6 +522,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = codepushexample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "codepushexample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -492,7 +536,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = codepushexample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,6 +552,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = codepushexample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "codepushexample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

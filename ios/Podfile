@@ -39,6 +39,8 @@ target 'codepushexample' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'ZIPFoundation', '~> 0.9'
+
   target 'codepushexampleTests' do
     inherit! :complete
     # Pods for testing

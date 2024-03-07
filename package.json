@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "build-js-ios": "sh makeBundle.sh ios main.jsbundle",
+    "build-js-android": "sh makeBundle.sh android index.android.bundle"
   },
   "dependencies": {
     "react": "18.2.0",
