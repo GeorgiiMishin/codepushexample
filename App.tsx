@@ -6,27 +6,12 @@
  */
 
 import React, {useEffect} from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  Text,
-  useColorScheme,
-  NativeModules,
-  Platform,
-  StyleSheet,
-} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {NativeModules, Platform} from 'react-native';
+import {TodoApp} from './src';
 
 const {CodePushModule} = NativeModules;
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   useEffect(() => {
     CodePushModule.initialize(
       Platform.select({
@@ -36,23 +21,7 @@ function App(): React.JSX.Element {
     );
   }, []);
 
-  return (
-    <SafeAreaView style={[backgroundStyle, styles.container]}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <Text>Main application without code push</Text>
-    </SafeAreaView>
-  );
+  return <TodoApp />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
