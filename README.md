@@ -83,3 +83,5 @@ To learn more about React Native, take a look at the following resources:
 [Fuc\*up meetup](https://www.youtube.com/watch?v=nVB_veNuXGI)
 
 [Немного о том, как работает RN на примере анимаций](https://www.youtube.com/watch?v=-1GnQCHuiZc)
+
+[Server example](https://github.com/GeorgiiMishin/codepushserver)
